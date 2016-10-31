@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" style="height:100%" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" style="height:100%" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" style="height:100%" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" style="height:100%" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>应用下载</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <base href="/">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-controller="rPAppCtrl" style="height:100%">
+<!--<ul class="menu">-->
+<!--<li><a href="#!/pc">pc</a></li>-->
+<!--<li><a href="#!/mobile">mobile</a></li>-->
+<!--<li><a href="#!/error">error</a></li>-->
+<!--</ul>-->
+<!--<a href="/view3" style="font-size: 10em">ceshi</a>-->
+<div wechat-notice ng-if="isWeChat"></div>
+<div class="imgBox imgLeft">
+    <img src="image/left.png" alt="">
+</div>
+<div class="content height100" class="height100">
+    <!--<div ng-view style="height:100%"></div>-->
+    <div pc-content ng-if="pageDirective=='pcContent'"></div>
+    <div mobile-content ng-if="pageDirective=='mobileContent'"></div>
+    <div error-content ng-if="pageDirective=='errorContent'"></div>
+</div>
+<div class="imgBox imgRight">
+    <img src="image/right.png" alt="">
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.qrcode.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+
+<script src="app.js"></script>
+<script src="pc/view1.js"></script>
+<script src="mobile/view2.js"></script>
+<script src="error/view3.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

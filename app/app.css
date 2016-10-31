@@ -1,0 +1,237 @@
+/* app css stylesheet */
+body {
+
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+}
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li + li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.imgBox {
+    max-width: 23%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.imgBox > img {
+    width: 100%;
+}
+
+.imgRight {
+    right: 0;
+}
+
+.imgLeft {
+    left: 0;
+}
+
+.f_l {
+    float: left;
+}
+
+.f_r {
+    float: right;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pcViewWrapper {
+    width: 100%;
+    margin: 2em auto;
+}
+
+.logoBox {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    width: 9em;
+    height: 9em;
+    margin-right: 3em;
+    vertical-align: baseline;
+}
+
+.erWeiMa {
+    width: 100px;
+    height: 100px;
+    /*margin-top: 6em;*/
+    transition: 1s;
+    display: inline-block;
+}
+
+/*.erWeiMa:hover {*/
+    /*width: 11em;*/
+    /*height: 11em;*/
+/*}*/
+
+.appName {
+    font-size: 2.5em;
+    margin: 0.5em auto;
+}
+
+.c_B3 {
+    color: #B3B3B3
+}
+
+.screenshotsBox {
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+.t_a_c {
+    text-align: center;
+}
+
+.dowm {
+    height: 3em;
+    width: 15em;
+    border: 1px solid #e8e8e8;
+    border-radius: 1.5em;
+    line-height: 3em;
+    color: #B1B1B1;
+    margin: 2em auto;
+    display: block;
+    text-decoration: none;
+}
+
+.screenshots ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.screenshots ul li {
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+.appDescriptionTilte_m {
+    color: #B3B3B3;
+    font-size: 1.5em;
+    margin: 1em auto;
+}
+
+.appDescription_pc {
+    width: 70%;
+    margin: auto;
+}
+
+.pcViewFirst{
+    min-height: 700px;
+}
+
+.appDescription {
+    margin: auto 1em;
+}
+
+.height100 {
+    height: 100%;
+}
+
+hr {
+    border-color: #e8e8e8;
+}
+
+.notFoundWrapper {
+    width: 55%;
+    min-height: 20em;
+    border: 1px solid #e8e8e8;
+    margin: 5em auto;
+    box-shadow: 0 0 10px 1px #e8e8e8;
+    padding: 2em 1.5em;
+    background-color: #FAFAFA;
+}
+
+@media screen and (min-width: 1366px) {
+    .notFoundWrapper {
+        padding: 3em;
+        width: 45%;
+    }
+
+    .reload {
+        margin-left: 4.5em;
+    }
+
+    .nFTitle {
+        width: 70%;
+        margin: auto;
+    }
+
+    .reasonWrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    .reasonBox {
+        float: left;
+    }
+
+    .reload {
+        float: left;
+    }
+}
+
+/*.nFTitle{*/
+/*text-align: center;*/
+/*}*/
+
+.nFTitle div:first-child {
+    font-size: 3em;
+    margin-right: 1em;
+}
+
+.nFTitle div:last-child {
+    font-size: 1.5em;
+}
+
+.reasonTile {
+    font-size: 1.1em;
+}
+
+.reason {
+    color: #B3B3B3;
+}
+
+.reload {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 2em;
+}
+
+.clear {
+    clear: both;
+}
+
+.version{
+    margin: 1em auto;
+}

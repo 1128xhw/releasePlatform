@@ -1,0 +1,93 @@
+<div class="pcViewWrapper height100">
+    <div class="height100 pcViewFirst">
+        <div class="logoBox">
+            <img class="logo" src="{{viewData.Icon}}" alt="">
+            <div id="code" class="erWeiMa"></div>
+            <!--<img class="erWeiMa" src="image/erweima.png" alt="">-->
+        </div>
+        <div class="t_a_c">
+            <div class="appName" ng-bind="viewData.AppName"></div>
+            <div class="c_B3" style="margin-bottom: 1em;">扫描二维码下载</div>
+            <div class="c_B3">或用手机浏览器输入这个网址: <span ng-bind="url"></span></div>
+        </div>
+
+        <div class="versionsWrapper" style="width: 70%;margin: auto;margin-top: 3em;border-top: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;">
+            <div style="width: 49%;float:left;text-align: center;font-size: 0.9em;border-right: 1px solid #f5f5f5;padding: 3em 0;">
+                <i class="fa fa-android fa-3x"></i>
+                <div class="version">当前版本：<span ng-bind="AndroidVersion.VersionNumber"></span></div>
+                <!--<div>更新时间：2016-10-18 10:36<span></span></div>-->
+                <div ng-if="AndroidVersion.UpgradeContent!=''" style="text-align: left;width: 70%;margin: auto;">
+                    <div class="c_B3" style="font-size: 1.1em;margin: 0.4em auto;"><b>更新日志</b></div>
+                    <div class="c_B3" ng-bind="AndroidVersion.UpgradeContent"></div>
+                </div>
+            </div>
+            <div style="width: 49%;float: left;text-align: center;font-size: 0.9em;border-left: 1px solid #f5f5f5;padding: 3em 0;">
+                <i class="fa fa-apple fa-3x"></i>
+                <div class="version">当前版本：<span ng-bind="iOSVersion.VersionNumber"></span></div>
+                <!--<div>更新时间：2016-10-18 10:36<span></span></div>-->
+                <div ng-if="AndroidVersion.UpgradeContent!=''" style="text-align: left;width: 70%;margin: auto;">
+                    <div class="c_B3" style="font-size: 1.1em;margin: 0.4em auto;"><b>更新日志</b></div>
+                    <div class="c_B3" ng-bind="AndroidVersion.UpgradeContent"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--<hr style="margin: -5em auto 2em;">-->
+    <div class="appDescription_pc" ng-if="viewData.Description !=''&&viewData.Description != null&&viewData.Description != undefined">
+        <div class="appDescriptionTilte_m">应用描述</div>
+        <pre class="c_B3" ng-bind="viewData.Description">
+移动校园是一款智能化教学、学习和办公一体化综合服务平台APP，核心理念：无论你在哪里，校园都在你手里。
+适用于各类、各阶段的学校，方便老师、学生、家长之间信息的即时传达沟通，方便各教务人员随时随地的办公。
+采用标准的接口，可以与任何第三方数字化校园平台无缝、快速对接，子应用可以无限定制、扩展，满足各种需求。
+
+摘录部分应用介绍如下：
+
+学习圈：随时随地分享学习心得，给您怒点32个大赞。
+名师公众号：名师开设公众号，学生、家长自由关注，实时推送经验、知识点，从此名师就在您身边。
+通知公告：随时随地掌握学校最新动态，贴心提醒好帮手。
+微课程：小课程、大智慧。从此，把学校装进手心里。
+课程表：课程信息一目了然，想看就看，想查就查，随时随心。
+行政办公：有公文要处理却不在办公室？掏出手机，分分钟搞定。
+出勤情况：孩子迟到我知道，孩子早退还知道，一切尽在掌握中。
+日常表现：你的优良中差，你的校内表现，日常学习生活等，实现家长互通。
+成绩查询：查成绩、看排名、知差距、即时调整学习计划。
+无线投影：咔嚓一下，拍出来投上去！放大？缩小？旋转？都OK！
+        </pre>
+    </div>
+    <hr>
+    <div class="screenshots appDescription_pc" ng-if="viewData.AppScreenshots.length>0">
+        <div class="appDescriptionTilte_m">应用截图</div>
+        <div class="screenshotsBox">
+            <ul>
+                <li ng-repeat="img in viewData.AppScreenshots">
+                    <img src="{{img.Url}}"
+                         alt="">
+                </li>
+                <li>
+                    <img src="http://firimg.fir.im/8fa61f2e317b5afa9906c823e863e1009f0ea532?imageView2/0/w/426/h/240"
+                         alt="">
+                </li>
+                <li>
+                    <img src="http://firimg.fir.im/8fa61f2e317b5afa9906c823e863e1009f0ea532?imageView2/0/w/426/h/240"
+                         alt="">
+                </li>
+                <li>
+                    <img src="http://firimg.fir.im/8fa61f2e317b5afa9906c823e863e1009f0ea532?imageView2/0/w/426/h/240"
+                         alt="">
+                </li>
+                <li>
+                    <img src="http://firimg.fir.im/8fa61f2e317b5afa9906c823e863e1009f0ea532?imageView2/0/w/426/h/240"
+                         alt="">
+                </li>
+                <li>
+                    <img src="http://firimg.fir.im/8fa61f2e317b5afa9906c823e863e1009f0ea532?imageView2/0/w/426/h/240"
+                         alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
