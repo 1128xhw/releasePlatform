@@ -1,0 +1,371 @@
+/* app css stylesheet */
+/*@font-face {*/
+/*font-family: 'HelveticaNeue';*/
+/*src: url('../fonts/HelveticaNeue.ttf');*/
+/*!*src: url('fonts/HelveticaNeueLTPro-BdCn.eot');*!*/
+/*!*src: local('☺'), url('fonts/HelveticaNeueLTPro-BdCn.woff') format('woff'), url('fonts/HelveticaNeueLTPro-BdCn.ttf') format('truetype'), url('fonts/HelveticaNeueLTPro-BdCn.svg') format('svg');*!*/
+/*font-weight: normal;*/
+/*font-style: normal;*/
+/*}*/
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.eot');
+    src: url('../fonts/HelveticaNeue.eot') format('embedded-opentype'),
+    url('../fonts/HelveticaNeue.woff2') format('woff2'),
+    url('../fonts/HelveticaNeue.woff') format('woff'),
+    url('../fonts/HelveticaNeue.ttf') format('truetype'),
+    url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+}
+
+body {
+    font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    width: 100%;
+    /*fonts-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";*/
+}
+
+.imgBox {
+    max-width: 23%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.imgBox > img {
+    width: 100%;
+}
+
+.imgRight {
+    right: 0;
+}
+
+.imgLeft {
+    left: 0;
+}
+
+.f_l {
+    float: left;
+}
+
+.f_r {
+    float: right;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 2em;
+}
+
+.viewWrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.versionsWrapper {
+    margin: 3em auto auto;
+    /*margin-top: 3em;*/
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.versionsWrapperW_m {
+    width: 90%;
+}
+
+.versionsWrapperW_pc {
+    width: 70%;
+}
+
+.versionsBox {
+    width: 49%;
+    float: left;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 3em 0;
+}
+
+.versionsBoxLeft {
+    border-right: 1px solid #e8e8e8;
+}
+
+.versionsBox_m {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 3em 0;
+}
+
+.downloadWrapper {
+    margin: 1.5em auto;
+}
+
+.upgradeContentBox {
+    text-align: left;
+    width: 70%;
+    margin: 2em auto auto;
+}
+
+.upgradeContentBox_m {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+
+.upgradeTitle {
+    font-size: 1.1em;
+    margin: 0.4em auto;
+}
+
+.logoBox {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logoBox_m {
+    width: 100%;
+    margin: 5em auto 3em;
+    text-align: center;
+}
+
+.logo {
+    width: 9em;
+    height: 9em;
+    margin-right: 3em;
+    vertical-align: baseline;
+}
+
+.logo_m {
+    width: 8em;
+    height: 8em;
+    margin: auto
+}
+
+.erWeiMa {
+    width: 100px;
+    height: 100px;
+    /*margin-top: 6em;*/
+    transition: 1s;
+    display: inline-block;
+}
+
+/*.erWeiMa:hover {*/
+/*width: 11em;*/
+/*height: 11em;*/
+/*}*/
+
+.appName {
+    font-size: 2em;
+    margin: 0.5em auto;
+}
+
+.appName_m {
+    font-size: 1.5em;
+    margin: 1em auto;
+}
+
+.c_B3 {
+    color: #B3B3B3
+}
+
+.m_b_1 {
+    margin-bottom: 1em;
+}
+
+.screenshotsBox {
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+.t_a_c {
+    text-align: center;
+}
+
+.f_z_095 {
+    font-size: 0.95em;
+}
+
+.down {
+    height: 3em;
+    width: 15em;
+    border: 1px solid #e8e8e8;
+    border-radius: 1.5em;
+    line-height: 3em;
+    color: #B1B1B1;
+    margin: 2em auto;
+    display: block;
+    text-decoration: none;
+}
+
+.screenshots ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.screenshots ul li {
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+.appDescriptionTilte_m {
+    color: #B3B3B3;
+    font-size: 1.5em;
+    margin: 1em auto;
+}
+
+.appDescription_pc {
+    width: 70%;
+    margin: auto;
+}
+
+.appDescription_pc img {
+    /*width: 240px;*/
+    /*height: 426px;*/
+    max-height: 426px;
+    height: 426px;
+}
+
+.appDescription img {
+    /*width: 240px;*/
+    /*height: 426px;*/
+    max-height: 426px;
+    height: 426px;
+}
+
+.pcViewFirst {
+    min-height: 700px;
+}
+
+.appDescription {
+    margin: auto 1em;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.minHeight{
+    min-height: 100%;
+}
+
+
+.height80 {
+    height: 80%;
+}
+
+hr {
+    border-color: #e8e8e8;
+}
+
+.hr75 {
+    width: 75%;
+    margin: auto;
+}
+
+.notFoundWrapper {
+    width: 55%;
+    min-height: 20em;
+    border: 1px solid #e8e8e8;
+    margin: 5em auto;
+    box-shadow: 0 0 10px 1px #e8e8e8;
+    padding: 2em 1.5em;
+    background-color: #FAFAFA;
+}
+
+@media screen and (min-width: 1366px) {
+    .notFoundWrapper {
+        padding: 3em;
+        width: 45%;
+    }
+
+    .reload {
+        margin-left: 4.5em;
+    }
+
+    .nFTitle {
+        width: 70%;
+        margin: auto;
+    }
+
+    .reasonWrapper {
+        width: 70%;
+        margin: auto;
+    }
+
+    .reasonBox {
+        float: left;
+    }
+
+    .reload {
+        float: left;
+    }
+}
+
+/*.nFTitle{*/
+/*text-align: center;*/
+/*}*/
+
+.nFTitle div:first-child {
+    font-size: 3em;
+    margin-right: 1em;
+}
+
+.nFTitle div:last-child {
+    font-size: 1.5em;
+}
+
+.reasonTile {
+    font-size: 1.1em;
+}
+
+.reason {
+    color: #B3B3B3;
+}
+
+.reload {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 2em;
+}
+
+.clear {
+    clear: both;
+}
+
+.version {
+    margin: 1em auto;
+}
+
+.title_color {
+    color: #505556;
+}
+
+.footer {
+    font-size: 13px;
+    text-align: center;
+    /*margin: 4em auto 2em;*/
+    /*height: 8em;*/
+    margin-top: 2em;
+    padding: 2em 0 2em;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+pre{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}

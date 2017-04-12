@@ -10,50 +10,57 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>应用下载</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="max-age=0"/>
     <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
     <meta http-equiv="expires" content="0">
     <base href="/">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-    <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/app.css">-->
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body ng-controller="rPAppCtrl" style="height:100%">
-<!--<ul class="menu">-->
-<!--<li><a href="#!/pc">pc</a></li>-->
-<!--<li><a href="#!/mobile">mobile</a></li>-->
-<!--<li><a href="#!/error">error</a></li>-->
-<!--</ul>-->
-<!--<a href="/view3" style="font-size: 10em">ceshi</a>-->
 <div wechat-notice ng-if="isWeChat"></div>
-<div class="imgBox imgLeft">
-    <img src="image/left.png" alt="">
-</div>
-<div class="content height100" class="height100">
+
+<div class="content minHeight100">
+    <div class="imgBox imgLeft">
+        <img src="image/left.png">
+    </div>
     <!--<div ng-view style="height:100%"></div>-->
     <div pc-content ng-if="pageDirective=='pcContent'"></div>
     <div mobile-content ng-if="pageDirective=='mobileContent'"></div>
     <div error-content ng-if="pageDirective=='errorContent'"></div>
+    <div class="imgBox imgRight">
+        <img src="image/right.png" alt="">
+    </div>
 </div>
-<div class="imgBox imgRight">
-    <img src="image/right.png" alt="">
+<div class="footer">
+    <hr style="width: 85%;margin: auto auto 2em;">
+    <div>Copyright © 2016 iZhihuidao. All Rights Reserved.</div>
+    <div>i智慧岛 版权所有</div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.qrcode.min.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
 
-<script src="app.js"></script>
-<script src="pc/view1.js"></script>
-<script src="mobile/view2.js"></script>
-<script src="error/view3.js"></script>
+<!--<script data-main="js/shareStyleSetJs/config" src="js/shareStyleSetJs/require.js"></script>-->
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/shareStyleSetJs/qqShare.js"></script>
+<script src="js/shareStyleSetJs/main.js"></script>
+
+<script src="app.min.js"></script>
+
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>
+
 </body>
 </html>
